@@ -427,3 +427,61 @@ footer {
 }
 
 
+/* =========================================
+   8. WHY CHOOSE US (Home Page)
+   ========================================= */
+.why-choose-us {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    padding: 2rem;
+    background-color: #ffffff; /* White cards to pop against the cream background */
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item-icon {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.feature-item h4 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr; /* Stacks them on mobile */
+    }
+}
+
