@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSD Style Salon | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">RSD Style Salon</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hair.html">Hair</a></li>
+                <li><a href="makeup.html">Makeup</a></li>
+                <li><a href="waxing.html">Waxing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="nav-btn">BOOK NOW</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero">
+        <p class="hero-subtitle">Beauty • Confidence • You</p>
+        <h1>THE BEAUTY Salon</h1>
+        <div class="open-badge">Open Today: 9:00 AM - 7:00 PM</div>
+        <span class="script-text">Look Good Feel Good Always</span>
+        <br><br>
+        <a href="hair.html" class="btn">Explore Our Services</a>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <!-- 3. WHY CHOOSE US SECTION -->
+    <section class="why-choose-us">
+        <h3 style="justify-content: center; border: none; margin-bottom: 0;">Why Choose RSD?</h3>
+        <span class="script-text" style="font-size: 1.5rem; margin-bottom: 0;">The RSD Experience</span>
+        
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-item">
+                <span class="feature-item-icon">✂️</span>
+                <h4>Expert Stylists</h4>
+                <p>Years of experience in cutting, coloring, and styling to give you the perfect look.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-item">
+                <span class="feature-item-icon">✨</span>
+                <h4>Premium Products</h4>
+                <p>We only use high-quality, salon-grade products that keep your hair healthy and glowing.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-item">
+                <span class="feature-item-icon">♡</span>
+                <h4>Clean & Hygienic</h4>
+                <p>Your safety is our priority. We maintain strict cleanliness for all our tools and stations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <h3 style="justify-content: center; border: none;">Client Love</h3>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p class="stars">★★★★★</p>
+                <p class="quote">"Vicky did an amazing job on my balayage! The color is exactly what I wanted and my hair still feels so soft."</p>
+                <p class="client-name">- Maria S.</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="stars">★★★★★</p>
+                <p class="quote">"The best salon in Robinson Homes East. Very clean, relaxing, and the staff is so friendly."</p>
+                <p class="client-name">- Jessica T.</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="stars">★★★★★</p>
+                <p class="quote">"I got my makeup done here for a wedding, and it lasted all night. Highly recommended!"</p>
+                <p class="client-name">- Anna C.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 5. FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>RSD Style Salon</h4>
+                <p>Beauty, Confidence, You.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>0929 849 9432</p>
+                <p>vrmero500@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <p>Blk 59 Lot 3 Baydrive Road 40<br>Robinson Homes East</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RSD Style Salon. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 6. JAVASCRIPT (Scroll Effects & Back to Top) -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            const topBtn = document.getElementById("backToTop");
+            
+            // Shrink Nav on scroll
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            // Show Back to Top button
+            if (window.scrollY > 300) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        });
+    </script>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="backToTop" title="Go to top">↑</button> 
+</body>
+</html>

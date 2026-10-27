@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSD Style Salon | Makeup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">RSD Style Salon</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hair.html">Hair</a></li>
+                <li><a href="makeup.html">Makeup</a></li>
+                <li><a href="waxing.html">Waxing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="nav-btn">BOOK NOW</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. PAGE HEADER -->
+    <div class="page-header">
+        <h2>The Beauty Salon</h2>
+        <span class="script-text">Look Good Feel Good Always</span>
+    </div>
+
+    <!-- 3. SERVICE MENU -->
+    <div class="container">
+        <ul class="two-col-list">
+            <li><span>Bridal Makeup</span> <span class="price">₱ ---</span></li>
+            <li><span>Party & Event Makeup</span> <span class="price">₱ ---</span></li>
+            <li><span>Everyday / Natural Makeup</span> <span class="price">₱ ---</span></li>
+            <li><span>Glam Makeup</span> <span class="price">₱ ---</span></li>
+            <li><span>Soft Makeup</span> <span class="price">₱ ---</span></li>
+            <li><span>Matte Makeup</span> <span class="price">₱ ---</span></li>
+            <li><span>Dewy Makeup</span> <span class="price">₱ ---</span></li>
+            <li><span>Contour & Highlight</span> <span class="price">₱ ---</span></li>
+            <li><span>Eyeliner & Lashes</span> <span class="price">₱ ---</span></li>
+            <li><span>Lip Makeup</span> <span class="price">₱ ---</span></li>
+            <li><span>Makeup for Photoshoots</span> <span class="price">₱ ---</span></li>
+            <li><span>Makeup Touch-Ups</span> <span class="price">₱ ---</span></li>
+        </ul>
+    </div>
+
+    <!-- 4. FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>RSD Style Salon</h4>
+                <p>Beauty, Confidence, You.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>0929 849 9432</p>
+                <p>vrmero500@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <p>Blk 59 Lot 3 Baydrive Road 40<br>Robinson Homes East</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RSD Style Salon. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 5. JAVASCRIPT (Scroll Effects & Back to Top) -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            const topBtn = document.getElementById("backToTop");
+            
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 300) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        });
+    </script>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="backToTop" title="Go to top">↑</button> 
+</body>
+</html>

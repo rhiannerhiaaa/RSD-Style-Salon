@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSD Style Salon | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">RSD Style Salon</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hair.html">Hair</a></li>
+                <li><a href="makeup.html">Makeup</a></li>
+                <li><a href="waxing.html">Waxing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="nav-btn">BOOK NOW</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. PAGE HEADER -->
+    <div class="page-header">
+        <h2>Visit Us</h2>
+        <span class="script-text">We can't wait to see you</span>
+    </div>
+
+    <!-- 3. CONTACT INFORMATION -->
+    <div class="container">
+        <div class="contact-info">
+            <p style="font-size: 1.1rem; color: var(--accent); font-style: italic; margin-bottom: 2rem;">
+                "Thank you for trusting our hair creations!"
+            </p>
+
+            <p style="margin-bottom: 2rem;">
+                For inquiries and appointments, feel free to contact:
+            </p>
+
+            <p>
+                <strong>Owner / Stylist</strong>
+                Vicky Romero
+            </p>
+
+            <p>
+                <strong>Contact Number</strong>
+                <a href="tel:+639298499432" style="color: var(--text-dark); text-decoration: none;">0929 849 9432</a>
+            </p>
+
+            <p>
+                <strong>Email Address</strong>
+                <a href="mailto:vrmero500@gmail.com" style="color: var(--text-dark); text-decoration: none;">vrmero500@gmail.com</a>
+            </p>
+
+            <p>
+                <strong>Location</strong>
+                Robinson Homes East<br>
+                Blk 59 Lot 3 Baydrive Road 40
+            </p>
+
+            <div style="margin-top: 3rem;">
+                <a href="https://www.facebook.com/share/19t6692q8u/" target="_blank" class="btn">Message RSD Style Salon</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. FAQ SECTION -->
+    <div class="faq-section">
+        <h3 style="justify-content: center; border: none; margin-top: 4rem;">Frequently Asked Questions</h3>
+        
+        <details class="faq-item">
+            <summary>Do I need to book an appointment in advance?</summary>
+            <p>Yes, we highly recommend booking in advance, especially for weekends and major hair treatments, to ensure we can accommodate you.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Do you accept walk-ins?</summary>
+            <p>We do accept walk-ins if there is an available stylist, but appointments are always prioritized.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>What payment methods do you accept?</summary>
+            <p>We accept Cash, GCash, and Bank Transfers.</p>
+        </details>
+    </div>
+
+    <!-- 5. FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>RSD Style Salon</h4>
+                <p>Beauty, Confidence, You.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>0929 849 9432</p>
+                <p>vrmero500@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <p>Blk 59 Lot 3 Baydrive Road 40<br>Robinson Homes East</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RSD Style Salon. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 6. JAVASCRIPT (Scroll Effects & Back to Top) -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            const topBtn = document.getElementById("backToTop");
+            
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 300) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        });
+    </script>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="backToTop" title="Go to top">↑</button>
+</body>
+</html>

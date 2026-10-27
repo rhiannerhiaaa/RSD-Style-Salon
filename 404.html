@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Not Found | RSD Style Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. 404 ERROR MESSAGE -->
+    <section class="hero" style="padding-top: 15rem;">
+        <h1 style="font-size: 6rem; color: var(--accent);">404</h1>
+        <h2>Oops! This page is missing.</h2>
+        <p>It looks like the style you're looking for doesn't exist.</p>
+        <br>
+        <a href="index.html" class="btn">Back to Home</a>
+    </section>
+
+    <!-- 2. JAVASCRIPT (Scroll Effects & Back to Top) -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            const topBtn = document.getElementById("backToTop");
+            
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 300) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        });
+    </script>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="backToTop" title="Go to top">↑</button>
+</body>
+</html>
